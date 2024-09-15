@@ -88,11 +88,18 @@ main video{
 }
 
 .entry{
+    /* width: 45vmax;
+    height: 35vmax; */
     color: white;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.685);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.767);
+    /* background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px 10px  rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 8vmax;
-    font-weight: 600;
     position: absolute;
     top: 55%;
     left: 50%;
@@ -105,21 +112,38 @@ main video{
     transition: all 0.5s ease;
 }
 
-
+.entry h1{
+    font-size: 8vmax;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 5vmax;
+}
+.entry h1::after{
+    content: "";
+    height: 1.5px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    bottom: -3vmax;
+    transform: translateX(-50%);
+}
 .homepage{
     font-size: 3vmax;
-    margin-top: 60px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+    margin-top: 4vmax;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.877);
     opacity: 0%;
     animation: first 6s ease forwards;
     animation-delay: 0.4s;
     transition: all 0.5s ease;
 }
 .para{
-    font-size: 20px;
+    font-size: 1.4vmax;
+    text-shadow: 0 0 14px rgb(0, 0, 0);
     font-weight: normal;
     line-height: 25px;
-    margin-top: 20px;
+    margin-top: 3.5vmax;
     opacity: 0%;
     animation: first 6s ease forwards;
     animation-delay: 0.5s;
@@ -151,7 +175,7 @@ main video{
     height: 100vh;
     color: rgb(255, 255, 255);
     background-color: transparent;
-    padding-top: 5vmax;
+    padding-top:4vmax;
     padding-left: 3vmax;
     display: flex;
     flex-direction: column;
@@ -228,8 +252,8 @@ main video{
     height: 38vmax;
     border-radius: 3vmax;
     color: whitesmoke;
-    background-color:  rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(0.1px);
+    background-color:  rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(0.2px);
     box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -269,7 +293,7 @@ main video{
     height: 3.25vmax;
     box-sizing: content-box;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
     font-size: 1.3vmax;
     font-weight: 500;
     margin-bottom: 1.5vmax;
@@ -292,7 +316,7 @@ main video{
     height: 3.25vmax;
     box-sizing: content-box;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
     font-size: 1.3vmax;
     font-weight: 500;
     margin-bottom: 1.5vmax;
@@ -312,7 +336,7 @@ main video{
     height: 3.25vmax;
     box-sizing: content-box;
     color: whitesmoke;
-    background-color:rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.3);
     font-size: 1.3vmax;
     font-weight: 500;
     margin-bottom: 1.75vmax;
@@ -380,6 +404,9 @@ main video{
         display: inline-block;
         padding-right: 12px;
     }
+    .para{
+        line-height: normal;
+    }
     .matter{
         width: 100vw;
         height: 55%;
@@ -391,7 +418,13 @@ main video{
         width: 100vw;
         height: 45%;
         padding: 0;
+        bottom: 0;
     }
+    /* .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    } */
     main{
         flex-direction: column;
     }
