@@ -117,7 +117,10 @@ main video{
     font-weight: 600;
     position: relative;
     margin-bottom: 5vmax;
+        -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
 .entry h1::after{
     content: "";
     height: 1.5px;
@@ -129,6 +132,34 @@ main video{
     bottom: -3vmax;
     transform: translateX(-50%);
 }
+
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
 .homepage{
     font-size: 3vmax;
     margin-top: 4vmax;
@@ -210,7 +241,7 @@ main video{
     margin-bottom: 1.4vmax;
     cursor: default;
     animation: second 2s ease forwards;
-    animation-delay: 4.3s;
+    animation-delay: 4.2s;
 }
 
 .quote1{
@@ -218,7 +249,7 @@ main video{
     font-weight: 500;
     cursor: default;
     animation: second 2s ease forwards;
-    animation-delay: 4.3s;
+    animation-delay: 4.2s;
 }
 
 
@@ -262,7 +293,7 @@ main video{
     padding: 2vmax;
     padding-top: 5vmax;
     visibility: hidden;
-    animation: third 2s ease forwards;
+    animation: third 1s ease forwards;
     animation-delay: 4.3s;
     overflow: hidden;
 }
