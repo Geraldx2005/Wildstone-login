@@ -46,7 +46,6 @@ h4{
 
 h4:hover{
     background-color: rgba(0, 0, 0, 0.5);
-    /* border: 2px solid rgba(245, 245, 245, 0.137); */
     border-radius: 50px;
 }
 
@@ -80,22 +79,13 @@ main{
 main video{
     width: 100%;
     height: 100%;
-    /* opacity: 20%; */
-    /* transform: rotate(90deg) translate(-450px, 10px); */
-    object-fit: cover;
     position: static;
     z-index: -100;
 }
 
 .entry{
-    /* width: 45vmax;
-    height: 35vmax; */
     color: white;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.767);
-    /* background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0 0 10px 10px  rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(15px);
-    border-radius: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,8 +370,6 @@ main video{
     color: whitesmoke;
     font-size: 1.3vmax;
     font-weight: 500;
-    position: relative;
-    bottom: 2px;
 }
 
 .submit{
@@ -451,11 +439,6 @@ main video{
         padding: 0;
         bottom: 0;
     }
-    /* .form{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    } */
     main{
         flex-direction: column;
     }
